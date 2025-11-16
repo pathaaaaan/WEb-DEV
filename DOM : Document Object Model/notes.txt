@@ -1,0 +1,17 @@
+> Dom manipulation
+    * html se element select karna
+    * text baldalna
+    * css baldalna
+    * attribute baldalna
+    * event Listener
+
+
+> selecting element of html
+    * document.querySelector...
+    * document.getElementById...
+    * document.getElementsByClassName... 
+
+
+> innerHTML vs innerText
+    * innerHTML -> element k andr ka html badalta
+    * innerText -> element k andr ka text badalta h sirf
