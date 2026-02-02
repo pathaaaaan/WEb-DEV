@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hotel Customer Profile</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Customer Details</legend>
+        <br />
+        <label>Customer Name:</label>
+        <input type="text" name="name" /><br /><br />
+
+        <label>Address:</label>
+        <textarea name="address" rows="4" cols="30"></textarea><br /><br />
+
+        <label>Age:</label>
+        <input type="number" name="age" /><br /><br />
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" /> Male<br />
+        <input type="radio" name="gender" value="Female" /> Female<br />
+        <input type="radio" name="gender" value="Other" /> Other<br /><br />
+
+        <label>Room Type:</label><br>
+        <input type="radio" name="room" value="AC" /> A/C<br />
+        <input type="radio" name="room" value="Non-AC" /> Non A/C<br />
+        <input type="radio" name="room" value="Deluxe" /> Deluxe<br /><br />
+
+        <label>Type of Payment:</label>
+        <select name="payment" id="payment">
+          <option value="Cash">Cash</option>
+          <option value="Card">Credit/Debit Card</option>
+          <option value="Coupons">Coupons</option></select
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form method="get">
+        <fieldset>
+        <form action="" method="get">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="un">Full Name : </label>
+            <input type="text" />
+            <br />
+            <br />
+
+            <label for="date">Birth Date : </label>
+            <input type="date" id="date" name="d" />
+            <br />
+            <br />
+
+            <label for="gender">Gender : </label>
+
+            <label for="m">Male</label>
+            <input type="radio" id="m" name="gender" value="male" />
+
+            <label for="f">Female</label>
+            <input type="radio" id="f" name="gender" value="female" />
+
+            <label for="o">Other</label>
+            <input type="radio" id="o" name="gender" value="other" />
+
+            <br />
+            <br />
+            <label for="address">Address : </label>
+            <input type="text" />
+            <br />
+            <br />
+            <label for="phone">Phone : </label>
+            <input type="text" />
+            <br />
+            <br />
+            <input type="submit" />
+        </fieldset>
+        </form>
+        <form action="" method="get">
+        <fieldset>
+            <legend>Extra Information</legend>
+            <label for="int">Interests : </label>
+            <input type="checkbox" id="int" name="interests" value="books"/>
+            <label for="int">Books</label>
+            <input type="checkbox" id="int" name="interests" value="music"/>
+            <label for="int">Music</label>
+            <input type="checkbox" id="int" name="interests" value="vg"/>
+            <label for="int">VideoGames</label>
+            <br>
+            <br>
+            <label for="color">Favouite Color : </label>
+            <input type="color">
+        </fieldset>
+        </form>
+        <br />
+        <br />
+        <input type="submit"/>
+        <input type="reset"/>
+        </fieldset>
+    </form>
+  </body>
+</html>
