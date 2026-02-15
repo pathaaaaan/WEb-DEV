@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raw HTML5 Tag Demo</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Semantic Page</h1>
+        
+        <nav>
+            <p>
+                <a href="#multimedia">Multimedia</a> | 
+                <a href="#forms">Forms</a> | 
+                <a href="#text">Text</a>
+            </p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <article id="multimedia">
+        <h2>I, II, & VI. Multimedia & Embedding</h2>
+        
+        <p>Video Tag:</p>
+        <video width="300" controls>
+            <source src="https://www.w3schools.com" type="video/mp4">
+        </video>
+
+        <p>Audio Tag:</p>
+        <audio controls>
+            <source src="https://www.w3schools.com" type="audio/mpeg">
+        </audio>
+
+        <p>Embed Tag (External SVG):</p>
+        <embed src="https://dev.w3.org" width="150" height="150">
+    </article>
+
+    <hr>
+
+    <article id="forms">
+        <h2>VII & X. Interactive Elements</h2>
+
+        <p>Choose a Browser (Datalist):</p>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Safari">
+        </datalist>
+
+        <p>Basic Addition (Output):</p>
+        <form oninput="total.value=parseInt(num1.value)+parseInt(num2.value)">
+            <input type="number" id="num1" value="10"> +
+            <input type="number" id="num2" value="5"> =
+            <output name="total" for="num1 num2">15</output>
+        </form>
+    </article>
+
+    <hr>
+
+    <article id="text">
+        <h2>VIII. Bi-Directional Isolation</h2>
+        <p>The names below are isolated to prevent layout glitches with mixed text directions:</p>
+        <ul>
+            <li>User: <bdi>Mark</bdi> - 100 points</li>
+            <li>User: <bdi>إيان</bdi> - 90 points</li>
+        </ul>
+    </article>
+
+    <hr>
+
+    <footer>
+        <p>Created for HTML5 demonstration purposes.</p>
+        <p>Contact: info@example.com</p>
+    </footer>
+
+</body>
+</html>
