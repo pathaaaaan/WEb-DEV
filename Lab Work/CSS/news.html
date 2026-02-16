@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* The "Magical" Newspaper Container */
+  .newspaper {
+    /* 1. Tell CSS how many columns you want */
+    column-count: 3;
+    
+    /* 2. Add space between the columns */
+    column-gap: 40px;
+    
+    /* 3. Add a vertical line between columns */
+    column-rule: 1px solid black;
+
+    /* Extra styling to make it look nice */
+    font-family: serif;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  /* Make the headline span across ALL columns */
+  h1 {
+    column-span: all;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+  }
+</style>
+</head>
+<body>
+
+<div class="newspaper">
+  <h1>The Simple Times</h1>
+  
+  <p>This is the easiest way to make a newspaper. By using <b>column-count</b>, the text will automatically flow from the bottom of the first column to the top of the second. You don't have to manually split your text!</p>
+
+  <p>If you add more text, the browser does the work for you. In the old days, web designers had to use complex boxes or "floats" to do this, but modern CSS makes it a single line of code.</p>
+  
+  <p>Just remember: the <b>column-span: all</b> property is what keeps the headline at the top instead of squishing it into the first column. Try changing the number in <i>column-count</i> to 2 or 4 to see how it reacts!</p>
+</div>
+
+</body>
+</html>
