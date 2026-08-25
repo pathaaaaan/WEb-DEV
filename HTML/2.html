@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Selection</title>
+
+    <script>
+
+        function showStudents() {
+
+            var project =
+            document.getElementById("project").value;
+
+            var students = "";
+
+            if(project == "Library Management System") {
+                students = "1. Aman<br>2. Riya<br>3. Karan";
+            }
+
+            else if(project == "Online Shopping") {
+                students = "1. Neha<br>2. Rahul<br>3. Priya";
+            }
+
+            else if(project == "Hospital Management") {
+                students = "1. Arjun<br>2. Simran<br>3. Mohit";
+            }
+
+            else if(project == "Banking System") {
+                students = "1. Vivek<br>2. Pooja<br>3. Ankit";
+            }
+
+            else if(project == "Student Portal") {
+                students = "1. Ravi<br>2. Sneha<br>3. Aditi";
+            }
+
+            document.getElementById("studentList")
+            .innerHTML = students;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<h2>Select a Project</h2>
+
+<select id="project" onchange="showStudents()">
+
+    <option value="">--Select Project--</option>
+
+    <option>Library Management System</option>
+
+    <option>Online Shopping</option>
+
+    <option>Hospital Management</option>
+
+    <option>Banking System</option>
+
+    <option>Student Portal</option>
+
+</select>
+
+<div id="studentList"></div>
+
+</body>
+</html>
